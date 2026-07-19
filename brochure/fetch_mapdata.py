@@ -13,7 +13,12 @@ if os.path.exists(OUT) and "--force" not in sys.argv:
 
 b = json.load(open(os.path.join(REPO, "data", "guide.json")))["print"]["map"]["bounds"]
 M = 0.02  # margin so geometry bleeds past the canvas
-south, north = b["centerLat"] - 0.20, b["centerLat"] + 0.20  # generous; canvas crops
+# same projection math as build_brochure.py: canvas aspect fixes the lat span
+import math
+ASPECT = (24.0 + 0.25) / (18.0 + 0.25)
+lat_span = (b["east"] - b["west"]) * math.cos(math.radians(b["centerLat"])) / ASPECT
+south = b["centerLat"] - lat_span/2 - M
+north = b["centerLat"] + lat_span/2 + M
 west, east = b["west"] - M, b["east"] + M
 bbox = f"({south},{west},{north},{east})"
 
