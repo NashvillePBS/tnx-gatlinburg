@@ -179,9 +179,11 @@ def build():
     for s in sorted(main_pins, key=lambda s: s["no"]):
         x, y = P(s["lat"], s["lng"]); r = bb.IN(0.36)/2
         box = (x-r, y-r, x+r, y+r)
-        for dx, dy in ((0,0),(bb.IN(0.4),0),(-bb.IN(0.4),0),(0,bb.IN(0.4)),(0,-bb.IN(0.4))):
+        cands = ((0,0),(bb.IN(0.4),0),(-bb.IN(0.4),0),(0,bb.IN(0.4)),(0,-bb.IN(0.4)),(bb.IN(0.45),bb.IN(0.45)))
+        for i, (dx, dy) in enumerate(cands):
             cand = (box[0]+dx, box[1]+dy, box[2]+dx, box[3]+dy)
-            if not any(bb.rects_overlap(cand, p, m=bb.IN(0.04)) for p in placed + pin_boxes):
+            free = not any(bb.rects_overlap(cand, p, m=bb.IN(0.04)) for p in placed + pin_boxes)
+            if free or i == len(cands)-1:
                 if (dx, dy) != (0, 0):
                     pin_els.append(f'<line x1="{x:.0f}" y1="{y:.0f}" x2="{x+dx:.0f}" y2="{y+dy:.0f}" stroke="{H(bb.TNX_RED)}" stroke-width="6"/>')
                 x, y, box = x+dx, y+dy, cand
@@ -249,9 +251,11 @@ def build():
       for s in sorted(inset_pins, key=lambda s: s["no"]):
           x, y = Pi(s["lat"], s["lng"]); r = bb.IN(0.38)/2
           box = (x-r, y-r, x+r, y+r)
-          for dx, dy in ((0,0),(bb.IN(0.42),0),(-bb.IN(0.42),0),(0,bb.IN(0.42)),(0,-bb.IN(0.42)),(bb.IN(0.42),bb.IN(0.42))):
+          cands = ((0,0),(bb.IN(0.42),0),(-bb.IN(0.42),0),(0,bb.IN(0.42)),(0,-bb.IN(0.42)),(bb.IN(0.42),bb.IN(0.42)),(bb.IN(0.5),-bb.IN(0.5)))
+          for i, (dx, dy) in enumerate(cands):
               cand = (box[0]+dx, box[1]+dy, box[2]+dx, box[3]+dy)
-              if not any(bb.rects_overlap(cand, p, m=bb.IN(0.05)) for p in ipin_boxes):
+              free = not any(bb.rects_overlap(cand, p, m=bb.IN(0.05)) for p in ipin_boxes)
+              if free or i == len(cands)-1:
                   if (dx, dy) != (0, 0):
                       ipins.append(f'<line x1="{x:.0f}" y1="{y:.0f}" x2="{x+dx:.0f}" y2="{y+dy:.0f}" stroke="{H(bb.TNX_RED)}" stroke-width="6"/>')
                   x, y, box = x+dx, y+dy, cand

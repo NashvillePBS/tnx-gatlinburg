@@ -254,9 +254,13 @@ def render_front():
         x, y = proj(s["lat"], s["lng"])
         r = IN(0.36)/2
         box = (x-r, y-r, x+r, y+r)
-        for dx, dy in ((0,0),(IN(0.4),0),(-IN(0.4),0),(0,IN(0.4)),(0,-IN(0.4))):
+        # last candidate is a forced fallback so co-located pins never stamp
+        # over each other (leak found during the Columbia build)
+        cands = ((0,0),(IN(0.4),0),(-IN(0.4),0),(0,IN(0.4)),(0,-IN(0.4)),(IN(0.45),IN(0.45)))
+        for i, (dx, dy) in enumerate(cands):
             cand = (box[0]+dx, box[1]+dy, box[2]+dx, box[3]+dy)
-            if not any(rects_overlap(cand, p, m=IN(0.04)) for p in placed + pin_boxes):
+            free = not any(rects_overlap(cand, p, m=IN(0.04)) for p in placed + pin_boxes)
+            if free or i == len(cands)-1:
                 if (dx, dy) != (0, 0):
                     d.line((x, y, x+dx, y+dy), fill=TNX_RED, width=6)
                 x, y, box = x+dx, y+dy, cand
@@ -311,9 +315,12 @@ def render_front():
         x, y = proj(s["lat"], s["lng"], iw, ih, ib["west"], ib["east"], ib["south"], ib["north"])
         r = IN(0.38)/2
         box = (x-r, y-r, x+r, y+r)
-        for dx, dy in ((0,0),(IN(0.42),0),(-IN(0.42),0),(0,IN(0.42)),(0,-IN(0.42)),(IN(0.42),IN(0.42))):
+        cands = ((0,0),(IN(0.42),0),(-IN(0.42),0),(0,IN(0.42)),(0,-IN(0.42)),
+                 (IN(0.42),IN(0.42)),(IN(0.5),-IN(0.5)))
+        for i, (dx, dy) in enumerate(cands):
             cand = (box[0]+dx, box[1]+dy, box[2]+dx, box[3]+dy)
-            if not any(rects_overlap(cand, p, m=IN(0.05)) for p in sub_pin_boxes):
+            free = not any(rects_overlap(cand, p, m=IN(0.05)) for p in sub_pin_boxes)
+            if free or i == len(cands)-1:
                 if (dx, dy) != (0, 0):
                     sd.line((x, y, x+dx, y+dy), fill=TNX_RED, width=6)
                 x, y, box = x+dx, y+dy, cand
@@ -429,8 +436,8 @@ def render_back():
             yy = cur_y
             for ln in name_lines:
                 d.text((px+M, yy), ln, font=name_f, fill=TNX_BLUE); yy += IN(0.215)
-            if s.get("host"):
-                d.text((px+M, yy), f"as seen with {s['host']}", font=cred_f, fill=MUTED)
+            credit = f"as seen with {s['host']}" if s.get("host") else "from the Crossroads archive"
+            d.text((px+M, yy), credit, font=cred_f, fill=MUTED)
             yy += IN(0.19)
             for ln in blurb_lines:
                 d.text((px+M, yy), ln, font=blurb_f, fill=INK_SOFT); yy += IN(0.175)
