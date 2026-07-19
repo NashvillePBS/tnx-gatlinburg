@@ -1,0 +1,298 @@
+{
+  "guide": {
+    "show": "Tennessee Crossroads",
+    "eyebrow": "A Crossroads Guide · 40 Years",
+    "titleHTML": "A Traveler's Guide<br>to <em>Gatlinburg</em>",
+    "city": "Gatlinburg",
+    "sub": "Four decades of back-road stories, gathered into one trip through the gateway to the Smokies — craft studios in the Glades, breakfast on the Parkway, and the neighbors up the road in Pigeon Forge and Sevierville.",
+    "metaNote": "every one a real Crossroads segment",
+    "mapLede": "Every stop our cameras visited, plotted from the national park to Sevierville.",
+    "quote": "“Come travel the highways and by-ways of Tennessee.”",
+    "note": "We hope this guide leads you to new memories, a hidden gem, or someplace you’ve always meant to visit. Thanks for making Tennessee Crossroads part of your journey.",
+    "colophonHTML": "Tennessee Crossroads is a <b>Nashville PBS</b> production · Each place began as a story on the show"
+  },
+  "print": {
+    "coverImage": "brochure/cache/cover-gatlinburg.jpg",
+    "coverCaption": "The Old Mill, Pigeon Forge",
+    "map": {
+      "bounds": {
+        "west": -83.72,
+        "east": -83.3,
+        "centerLat": 35.784
+      },
+      "riverWide": [
+        "Pigeon"
+      ],
+      "riverWideIn": 0.15,
+      "waterLabel": {
+        "text": "Little Pigeon River",
+        "lat": 35.842,
+        "lng": -83.578
+      },
+      "areaLabels": [
+        {
+          "name": "GATLINBURG",
+          "lat": 35.735,
+          "lng": -83.515
+        },
+        {
+          "name": "PIGEON FORGE",
+          "lat": 35.815,
+          "lng": -83.545
+        },
+        {
+          "name": "SEVIERVILLE",
+          "lat": 35.885,
+          "lng": -83.56
+        },
+        {
+          "name": "THE GLADES",
+          "lat": 35.752,
+          "lng": -83.463
+        },
+        {
+          "name": "PITTMAN CENTER",
+          "lat": 35.754,
+          "lng": -83.395
+        },
+        {
+          "name": "GREAT SMOKY MOUNTAINS NATIONAL PARK",
+          "lat": 35.69,
+          "lng": -83.5,
+          "big": true
+        }
+      ],
+      "inset": {
+        "name": "Downtown Gatlinburg",
+        "west": -83.53,
+        "east": -83.495,
+        "south": 35.699,
+        "north": 35.72305,
+        "box": [
+          0.6,
+          4.1,
+          6.5,
+          5.5
+        ]
+      },
+      "cartouche": [
+        0.6,
+        0.6,
+        6.5,
+        3.1
+      ],
+      "legend": [
+        0.6,
+        10.0,
+        6.5,
+        2.9
+      ],
+      "attrib": [
+        0.6,
+        13.2,
+        6.5,
+        1.2
+      ]
+    }
+  },
+  "sections": [
+    {
+      "key": "eat",
+      "title": "Eat & Drink",
+      "intro": "An early mountain breakfast and a craft sandwich worth the drive — fuel up before a day in the Smokies.",
+      "stops": [
+        {
+          "name": "Crockett's Breakfast Camp",
+          "host": "Joe Elmore",
+          "lat": 35.7076639,
+          "lng": -83.5219494,
+          "blurb": "Joe Elmore rises early in Gatlinburg to catch breakfast at Crockett's Breakfast Camp — a hearty mountain start to a day on the Parkway.",
+          "addr": "1103 Parkway",
+          "site": "crockettsbreakfastcamp.com",
+          "siteUrl": "https://crockettsbreakfastcamp.com/",
+          "link": "https://tennesseecrossroads.org/crocketts-breakfast-camp/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2026/06/MSshkzjN36sXBHoDty4AWAvMlrFZgxVCTCiw6ANAfFk.jpeg"
+        },
+        {
+          "name": "Tennessee Jed's",
+          "host": "Miranda Cohen",
+          "lat": 35.7132113,
+          "lng": -83.514333,
+          "blurb": "Great sandwiches in the Great Smoky Mountains: Miranda Cohen stops at Tennessee Jed's on Gatlinburg's Parkway, where craft sandwiches are built for a trail-day appetite.",
+          "addr": "631 Parkway",
+          "phone": "(865) 412-1131",
+          "site": "tennesseejeds.com",
+          "siteUrl": "http://www.tennesseejeds.com/",
+          "link": "https://tennesseecrossroads.org/tennessee-jeds/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2026/04/0X-KdHu-X6fI9FEbut5SgJcn9zs-S4u5-4gSwrDYnpI.jpeg"
+        }
+      ]
+    },
+    {
+      "key": "see",
+      "title": "See & Explore",
+      "intro": "A skybridge above the treetops, the Titanic in the foothills, and 17,000 shakers — the Smokies corridor collects one-of-a-kinds.",
+      "stops": [
+        {
+          "name": "Gatlinburg SkyBridge",
+          "host": "Joe Elmore",
+          "lat": 35.712970050433,
+          "lng": -83.5140870901826,
+          "blurb": "You've probably heard about the Gatlinburg SkyBridge — Joe Elmore lets you experience it. The Smoky Mountain marvel gave the whole town a boost as it rebuilt from the 2016 fires.",
+          "addr": "765 Parkway",
+          "phone": "(865) 436-4307",
+          "site": "gatlinburgskylift.com",
+          "siteUrl": "https://www.gatlinburgskylift.com/skybridge",
+          "link": "https://tennesseecrossroads.org/gatlinburg-skybridge/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/gatlinburg-skybridge.jpg"
+        },
+        {
+          "name": "Salt & Pepper Shaker Museum",
+          "host": "Rob Wilds",
+          "lat": 35.71602318367347,
+          "lng": -83.50251318367347,
+          "blurb": "About 17,000 salt and pepper shakers fill this one-of-a-kind Gatlinburg museum. Rob Wilds discovers there's more history on the dinner table than you ever imagined.",
+          "addr": "461 Brookside Village Way",
+          "phone": "(888) 778-1802",
+          "site": "thesaltandpeppershakermuseum.com",
+          "siteUrl": "https://www.thesaltandpeppershakermuseum.com/",
+          "link": "https://tennesseecrossroads.org/salt-pepper-shaker-museum/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/salt-pepper-shaker-museum.jpg"
+        },
+        {
+          "name": "The Old Mill Square",
+          "host": "Joe Elmore",
+          "lat": 35.7904519,
+          "lng": -83.5550934,
+          "blurb": "Pigeon Forge history goes back further than the amusement parks and outlet malls — and at the Old Mill Square, you can experience it and even take some of it home. Joe Elmore pays a visit.",
+          "addr": "Old Mill St",
+          "phone": "(865) 806-6002",
+          "site": "old-mill.com",
+          "siteUrl": "https://old-mill.com/",
+          "link": "https://tennesseecrossroads.org/old-mill-square/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/old-mill-square.jpg"
+        },
+        {
+          "name": "Titanic Museum",
+          "host": "Joe Elmore",
+          "lat": 35.8205643,
+          "lng": -83.578907,
+          "blurb": "In Pigeon Forge, the Titanic Museum captures the passengers' experiences aboard the ill-fated ship, complete with recreations and interactive features. Joe Elmore steps aboard.",
+          "addr": "2134 Parkway",
+          "phone": "(800) 381-7670",
+          "site": "titanicpigeonforge.com",
+          "siteUrl": "https://titanicpigeonforge.com/",
+          "link": "https://tennesseecrossroads.org/titanic-museum/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/titanic-museum.jpg"
+        },
+        {
+          "name": "Tennessee Museum of Aviation",
+          "host": "Rob Wilds",
+          "lat": 35.8602678,
+          "lng": -83.535087,
+          "blurb": "Tennesseans have played a big part in the history of aviation, and Sevierville's Tennessee Museum of Aviation puts those accomplishments on display. Rob Wilds takes the tour.",
+          "addr": "135 Air Museum Way",
+          "phone": "(865) 908-9372",
+          "site": "tnairmuseum.com",
+          "siteUrl": "https://www.tnairmuseum.com/",
+          "link": "https://tennesseecrossroads.org/tennessee-aviation-museum/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/tennessee-aviation-museum.jpg"
+        },
+        {
+          "name": "Smoky Mountain Winterfest",
+          "host": "Rob Wilds",
+          "blurb": "Fix that Christmas-is-over letdown: through the winter, Smoky Mountain Winterfest keeps the holiday season's glittering lights shining across Gatlinburg and its neighbors. Rob Wilds finds a bright getaway. Seasonal.",
+          "addr": "186 Old Mill Ave",
+          "site": "mypigeonforge.com",
+          "siteUrl": "https://www.mypigeonforge.com/event/winterfest",
+          "link": "https://tennesseecrossroads.org/smoky-mountain-winterfest/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/smoky-mountain-winterfest.jpg"
+        }
+      ]
+    },
+    {
+      "key": "stay",
+      "title": "Stay a While",
+      "intro": "A lodge you can only reach on foot and an inn named for its view — beds worth the trip themselves.",
+      "stops": [
+        {
+          "name": "Mt. LeConte Lodge",
+          "host": "Will Pedigo",
+          "blurb": "The only way up is on foot — and the supplies ride in with the llamas. Will Pedigo joins the friends who make an annual trek to the lodge atop Mt. LeConte.",
+          "addr": "250 Apple Valley Rd",
+          "phone": "(865) 429-5704",
+          "site": "lecontelodge.com",
+          "siteUrl": "http://www.lecontelodge.com/",
+          "link": "https://tennesseecrossroads.org/mt-leconte-lodge/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/mt-leconte-lodge.jpg"
+        },
+        {
+          "name": "Hippensteal's Mountain View Inn",
+          "host": "Laura Faber",
+          "lat": 35.7699165,
+          "lng": -83.4273834,
+          "blurb": "The name is a promise kept. Laura Faber enjoys the view at Hippensteal's Mountain View Inn, tucked into the hills between Gatlinburg and Sevierville.",
+          "addr": "4201 Tatem Marr Way",
+          "phone": "(800) 527-8110",
+          "site": "hippensteal.com",
+          "siteUrl": "https://www.hippensteal.com/",
+          "link": "https://tennesseecrossroads.org/hippensteals-mountain-view-inn/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2025/02/4iFWMwEftqbpLzf1B3jh_0WvXfc6dKKq-kp_P3jKSkE.jpeg"
+        }
+      ]
+    },
+    {
+      "key": "makers",
+      "title": "Makers",
+      "intro": "The country's largest independent community of artisans calls these hills home — studios, schools, and workshops where craft is a way of life.",
+      "stops": [
+        {
+          "name": "Great Smoky Arts & Crafts Community",
+          "host": "Laura Faber",
+          "lat": 35.74329274718221,
+          "lng": -83.45663684648302,
+          "blurb": "Laura Faber explores the Great Smoky Arts & Crafts Community, the largest independent community of artisans and craftspeople in the country — a loop of working studios and shops along Glades Road.",
+          "addr": "668 Glades Rd",
+          "phone": "(865) 436-6921",
+          "site": "greatsmokyartsandcrafts.com",
+          "siteUrl": "https://greatsmokyartsandcrafts.com/",
+          "link": "https://tennesseecrossroads.org/gatlinburg-arts-and-crafts-loop/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/11/GatlinburgArtsandCraftsLoop.jpg"
+        },
+        {
+          "name": "Arrowmont School of Arts and Crafts",
+          "host": "Joe Elmore",
+          "lat": 35.713253612160045,
+          "lng": -83.51187995538055,
+          "blurb": "Just off Gatlinburg's busy Parkway hides an artistic oasis overflowing with creativity. Joe Elmore makes a return visit to Arrowmont School of Arts and Crafts.",
+          "addr": "556 Parkway",
+          "phone": "(865) 436-5860",
+          "site": "arrowmont.org",
+          "siteUrl": "https://www.arrowmont.org/",
+          "link": "https://tennesseecrossroads.org/arrowmont-school-of-arts-and-crafts/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/arrowmont-school-of-arts-and-crafts.jpg"
+        },
+        {
+          "name": "Dinwoodie Metal Sculptors",
+          "host": "Tressa Bush",
+          "blurb": "A couple who share a love for each other — and a love for creating art from copper. Tressa Bush meets the Dinwoodies and watches metal turn into art.",
+          "addr": "170 Glades Rd",
+          "site": "",
+          "siteUrl": "",
+          "link": "https://tennesseecrossroads.org/dinwoodie-metal-sculptors/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/dinwoodie-metal-sculptors.jpg"
+        },
+        {
+          "name": "Michael Copas, Woodcarver",
+          "host": "Miranda Cohen",
+          "blurb": "Where most of us see a fallen tree, Michael Copas sees what's waiting inside. Miranda Cohen watches the master woodcarver turn trees into art.",
+          "addr": "Gatlinburg",
+          "site": "facebook.com",
+          "siteUrl": "https://www.facebook.com/Michael-Copas-1681680858715563/",
+          "link": "https://tennesseecrossroads.org/michael-copas-master-woodcarver/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2024/02/Mtwz6LQgH_g0tWvIwEKJQuzomQhiPzUndJ_vD0Cokhw.jpeg"
+        }
+      ]
+    }
+  ]
+}
